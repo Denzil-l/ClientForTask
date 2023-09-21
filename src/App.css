@@ -1,0 +1,33 @@
+#root {
+  width: 100%;
+  height: 100%;
+}
+body{
+  font-family: 'Rubik', sans-serif;
+
+}
+.container, .pages{
+  width: 100%;
+  height: 100%;
+}
+.pages{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+input{
+  border: 0;
+  background: transparent;
+
+}
+input:focus {
+  outline: none;
+}
+/* Обнуление стилей для кнопок */
+button{
+  all: unset;
+}

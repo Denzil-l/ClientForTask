@@ -1,0 +1,109 @@
+
+.login-button{
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+.login-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+}
+
+.logo-big{
+    width: 50%;
+}
+.login-form{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.login-label, .beautiful-block, .login-button{
+    margin-top: 50px;
+}
+
+.login-label{
+
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.beautiful-block{
+    position: relative;
+    width: 100%;
+    min-height: 70px;
+    padding: 16px;
+    border-radius: 15px;
+
+
+}
+
+.custom-input{
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    direction: ltr;
+    font-size: 18px;
+}
+.cell{
+    width: 10%;
+    height: 100%;
+    margin: 0 4px;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.x{
+    width: 10%;
+    height: 100%;
+    margin: 0 4px;
+  position: relative;
+  font-size: 30px;  
+  font-weight: 700;
+}
+.x::before{
+    content: '-';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.login-input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 0;
+    z-index: -1;
+    opacity: 0;
+    outline: none;
+}
+.active{
+    border: 1px solid rgba(0, 0, 0, 0.162);
+
+}
+
+.login-notification{
+    display: none;
+    margin: 16px;
+
+}
+.login-notification::after{
+    content: '*';
+    top: 0;
+    right:-3% ;
+
+}
